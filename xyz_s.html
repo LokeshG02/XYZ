@@ -1,0 +1,416 @@
+<html>
+<head>
+        <title>XYZ's</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
+ 
+<body bgcolor="ebf6f5">
+    
+    <section id="header">                                                                               <!--code for navigation bar-->
+        <a href="#"><img src="logo.png" class ="logo" alt="image" ></a>
+
+        <div>
+            <ul id="navbar">
+                <form>
+                    <a href="error.html" target="_blank">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"></button></a>
+                  </form>
+                  
+                <li><a class="active" href="#" >Home</a></li>
+                <li><a href="error.html">Offers</a></li>
+                <li><a href="error.html">Help</a></li>
+                <li><a href="error.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="/Users/lokeshgupta/Desktop/xyz/navigation/login.html" target="_blank">Login</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="banner">                                                                                           <!--code for auto changing banner-->
+    <div class="slideshow-container">                                                                       
+
+        <div class="mySlides fade">
+            <a href="error.html" target="_blank"><img src="banner/abstract-sale-banner-with-photo_23-2148153130.jpg" height="300px" width="100%"></a>
+        </div>
+        
+        <div class="mySlides fade">
+            <a href="error.html" target="_blank"><img src="banner/iPhone_14_Pro_Desktop_1.jpg" height="300px" width="100%"></a>
+        </div>
+        
+        <div class="mySlides fade">
+            <a href="error.html" target="_blank"><img src="banner/preview.jpg" height="300px" width="100%"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="file:///C:/Users/DELL/Desktop/xyz/brands%20link/dominos/dominos_link.html" target="_blank"><img src="banner/Pizza-Toppings-Banner-980x442.jpg" height="300px" width="100%">
+          </div>
+
+        <div class="mySlides fade">
+            <a href="error.html" target="_blank"><img src="banner/rolexbannern.jpg" height="300px" width="100%"></a>
+        </div>  
+
+        <div class="mySlides fade">
+            <a href="error.html" target="_blank"><img src="banner/sale_50%.jpg" height="300px" width="100%"></a>
+        </div>
+        
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>   
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+            </script>
+        
+    </section>
+
+    <h3>Categories</h3>
+
+    <section id="feature" class="section-p1">                                                           <!--Code for category buttons -->
+        
+        <div class="fe-box">
+            <a class="active" href="error.html">
+            <img src="features/cloths.jpg" alt="cloths" height="150px" width="150px">
+            <h6> Cloth's</h6></a>
+
+        </div>
+
+        <div class="fe-box">
+            <a href="error.html">
+            <img src="features/electronics.jpg" alt="electronics" height="150px" width="150px">
+            <h6>Electronics</h6></a>
+
+        </div>
+
+        <div class="fe-box">
+            <a href="error.html">
+            <img src="features/food.jpg" alt="Food" height="150px" width="150px">
+            <h6>Food</h6></a>
+
+        </div>
+
+        <div class="fe-box">
+            <a href="error.html">
+            <img src="features/grocery.jpg" alt="grocery" height="150px" width="150px">
+            <h6>Grocery</h6></a>
+
+        </div>
+
+        <div class="fe-box">
+            <a href="error.html">
+            <img src="features/skin care.jpg" alt="skin care" height="150px" width="150px">
+            <h6>Skin Care</h6></a>
+
+        </div>
+
+        <div class="fe-box">
+            <a href="error.html">
+            <img src="features/sports.jpg" alt="sports" height="150px" width="150px">
+            <h6>Sports</h6></a>
+
+        </div>
+    </section>
+
+    <section id="product1" class="section-01">                                                          <!--code fr popular product-->
+        <h2>Featured Product</h2>
+        <div class="pro-container">
+            <div class="pro">
+                <a href="error.html">
+                <img src="popular products/black nike tshirt.jpg " alt="tshirt" width="157" height="236 px">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Black Casul T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>999</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a></a>
+            </div>
+
+            <div class="pro">
+                <a href="error.html">
+                <img src="popular products/blue trousers women.jpg" alt="trousers"  width="157" height="236 px">
+                <div class="des">
+                    <span>Puma</span>
+                    <h5>Blue Casul Trousers Women</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>1299</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a></a>
+            </div>
+
+            <div class="pro">
+                <a href="error.html">
+                <img src="popular products/pond-s-men-energy-bright-face-wash.jpg " alt="facewash"  width="157" height="236 px">
+                <div class="des">
+                    <span>Pond's</span>
+                    <h5>Men Energy Bright Facewash</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>799</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a></a>
+            </div>
+
+            <div class="pro">
+                <img src="popular products/juicer.jpg" alt="juicer"  width="157" height="236 px">
+                <div class="des">
+                    <span>Sujata</span>
+                    <h5>Juicer Mixer Grinder Multipurpose</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>3,999</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="popular products/apple-iphone-13-128-gb-pink-digital-o491997703-p590798557-0-202208221207.jpg " alt="iphone"  width="157" height="236 px">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>Iphone 13 128GB Pink</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>1,00,000</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="popular products/Sonata watch.png " alt="watch"  width="157" height="236 px">
+                <div class="des">
+                    <span>Sonata</span>
+                    <h5>Analog Wrist Watch </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>2,499</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="popular products/badminton.jpg " alt="badminton"  width="157" height="236 px">
+                <div class="des">
+                    <span>Yonex</span>
+                    <h5>CB-134 Yonex Badminton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>1,199</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+
+            <div class="pro">
+                <img src="popular products/mangos.jpg " alt="mango"  width="157" height="236 px">
+                <div class="des">
+                    <span>Freshly</span>
+                    <h5>Mango fresh 1Kg</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>80</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="popular products/noodels.jpg" alt="food"  width="157" height="236 px">
+                <div class="des">
+                    <span>Red Hut</span>
+                    <h5>Veg Noodels</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>149</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="popular products/puma running shoes.jpg " alt="shoes"  width="157" height="236 px">
+                <div class="des">
+                    <span>Puma</span>
+                    <h5>Black Running Shoes </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <h4>1,999</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+        </div>
+    </section>
+   
+    <section id="brand" >                                                                                <!--code for brands option -->
+        <h3>Top Brand's</h3>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <a href="https://www.dominos.co.in/menu">
+                        <img src="brands/dominos.png" alt="Dominos" height="100px" width="200px"></a>
+                </div>
+                <div class="col-5">
+                    <a href="error.html">
+                    <img src="brands/vishal.png" alt="Dominos" height="100px" width="200px"></a>
+                </div>
+                <div class="col-5">
+                    <a href="error.html">
+                    <img src="brands/jio mart.png" alt="Dominos" height="100px" width="200px"></a>
+                </div>
+                <div class="col-5">
+                    <a href="error.html">
+                    <img src="brands/mcdonalds.png" alt="Dominos"height="100px" width="200px"></a>
+                </div>
+                <div class="col-5">
+                    <a href="error.html">
+                    <img src="brands/trends.png" alt="Dominos" height="100px" width="200px"></a>
+                </div>
+               <!-- <div class="col-5">
+                    <a href="error.html">
+                    <img src="brands/visha.png" alt="Haldiram" height="100px" width="200px"></a>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">                                                                         <!--code for footer-->
+        <div class="col">
+            <img src="logo.png" alt="xyz" width="120px" height="70px">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>56-A ,Block B,Bahadurgarh(haryana)</p>
+            <p><strong>Phone:</strong>+91 8818036627</p>
+            <p><strong>Hours:</strong>10:00 - 18:00 , Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="/Users/lokeshgupta/Desktop/xyz/navigation/sign in.html" target="_blank">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or Google Play</p>
+            <div class="row">
+                <a href="https://www.apple.com/in/app-store/" target="_blank">
+                <img src="footer/app_store.png" width="150px" height="50px"></a>
+                <a href="https://play.google.com/store/apps" target="_blank">
+                <img src="footer/play_store.png" width="150px" height="50px"></a>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="footer/payment.png" width="300px">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023,Tech2 etc-Html CSS Ecommers Template</p>
+        </div>
+    </footer>
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+

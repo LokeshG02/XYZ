@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Page</title>
+</head>
+<body>
+    <h1>Available Clothes</h1>
+    <div id="clothesList"></div>
+
+    <script>
+        fetch('http://localhost:8080/clothes')
+            .then(response => response.json())
+            .then(data => {
+                let clothesDiv = document.getElementById('clothesList');
+                data.clothes.forEach(cloth => {
+                    let clothDiv = document.createElement('div');
+                    clothDiv.innerHTML = `<p>Name: ${cloth.name}</p><p>Category: ${cloth.category}</p><p>Description: ${cloth.description}</p><p>Price: $${cloth.price}</p><hr>`;
+                    clothesDiv.appendChild(clothDiv);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

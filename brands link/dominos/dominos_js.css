@@ -1,0 +1,43 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+h1, h2 {
+	text-align: center;
+	color: #ff8c00;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+li {
+	margin: 20px;
+	text-align: center;
+}
+
+.item-name {
+	display: block;
+	margin-top: 10px;
+}
+
+.item-price {
+	display: block;
+	margin-top: 5px;
+	font-weight: bold;
+	color: #ff8c00;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 5px #888888;
+	object-fit: cover;
+}
